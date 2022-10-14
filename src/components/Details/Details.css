@@ -1,0 +1,25 @@
+.details-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.activities-container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    color: #9057e4;
+}
+
+.icon {
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+.activities-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}

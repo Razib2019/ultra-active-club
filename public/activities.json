@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Lunges",
+        "description": "Challenging your balance is an essential part of a well-rounded exercise routine. Lunges do just that, promoting functional movement while also increasing strength in your legs and glutes.",
+        "age": "20-24",
+        "time": 20,
+        "img": "https://www.verywellfit.com/thmb/2OyKSEj69_Q2j2jqtRgm2LqsR4I=/1500x1000/filters:fill(auto,1)/Lunges_unannotated1-399b9230f4154a30ad89034ba260fc1b.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "2",
+        "name": "Pushups",
+        "description": "Drop and give me 20! Pushups are one of the most basic yet effective bodyweight moves you can perform because of the number of muscles that are recruited to perform them.",
+        "age": "18-24",
+        "time": 15,
+        "img": "https://c4.wallpaperflare.com/wallpaper/938/467/793/men-fitness-pushups-wallpaper-preview.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "3",
+        "name": "Squats",
+        "description": "Squats increase lower body and core strength, as well as flexibility in your lower back and hips. Because they engage some of the largest muscles in the body, they also pack a major punch in terms of calories burned.",
+        "age": "19-23",
+        "time": 18,
+        "img": "https://t3.ftcdn.net/jpg/02/96/69/82/360_F_296698294_QlhTdrm4tHnZYFhR66h9ql3duWdlNxed.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "4",
+        "name": "Standing overhead dumbbell presses",
+        "description": "Compound exercises, which utilize multiple joints and muscles, are perfect for busy bees as they work several parts of your body at once. A standing overhead press isn't only one of the best exercises you can do for your shoulders, but it also engages your upper back and core.",
+        "age": "23-26",
+        "time": 30,
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shoulder-press-1620730831.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "5",
+        "name": "Dumbbell rows",
+        "description": "Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your upper body. Choose a moderate-weight dumbbell and ensure that you’re squeezing at the top of the movement.",
+        "age": "22-28",
+        "time": 25,
+        "img": "https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2022/03/Dumbbell-Row.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "6",
+        "name": " Single-leg dead-lifts",
+        "description": "This is another exercise that challenges your balance. Single-leg deadlifts require stability and leg strength. Grab a light to moderate dumbbell to complete this move.",
+        "age": "24-28",
+        "time": 27,
+        "img": "https://cdn9.classpass.com/fitness-library/movements/single-leg-deadlift/images/description.jpg",
+        "quantity": 0
+    }
+]
