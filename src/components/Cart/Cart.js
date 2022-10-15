@@ -6,7 +6,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = () => {
     return (
-        <div>
+        <div className='container'>
             <div className="person-info">
                 <img className='cart-image' src={logo} alt="" />
                 <div className='person-name'>

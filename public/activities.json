@@ -46,11 +46,38 @@
     },
     {
         "id": "6",
-        "name": " Single-leg dead-lifts",
+        "name": "Single-leg dead-lifts",
         "description": "This is another exercise that challenges your balance. Single-leg deadlifts require stability and leg strength. Grab a light to moderate dumbbell to complete this move.",
         "age": "24-28",
         "time": 27,
         "img": "https://cdn9.classpass.com/fitness-library/movements/single-leg-deadlift/images/description.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "7",
+        "name": "Burpees",
+        "description": "An exercise we love to hate, burpees are a super-effective, whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength.",
+        "age": "22-24",
+        "time": 19,
+        "img": "https://c1.wallpaperflare.com/preview/387/251/814/sport-fitness-exercise-pilates.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "8",
+        "name": "Side planks",
+        "description": "A healthy body requires a strong core at its foundation, so don’t neglect core-specific moves like the side plank.",
+        "age": "16-20",
+        "time": 16,
+        "img": "https://hips.hearstapps.com/hmg-prod/images/side-plank-1549646915.jpg",
+        "quantity": 0
+    },
+    {
+        "id": "9",
+        "name": "Planks",
+        "description": "Planks are an effective way to target both your abdominal muscles and your whole body. Planking stabilizes your core without straining your back the way situps or crunches might.",
+        "age": "19-25",
+        "time": 10,
+        "img": "https://c4.wallpaperflare.com/wallpaper/881/412/834/fitness-model-blue-clothing-working-out-planks-wallpaper-preview.jpg",
         "quantity": 0
     }
 ]
