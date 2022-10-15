@@ -3,8 +3,16 @@ import './Cart.css';
 import logo from '../../../src/images/image-1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2'
 
 const Cart = () => {
+    const activityCompleteBtn = () => {
+        Swal.fire(
+            'Congratulations!',
+            'You are done with your activity!',
+            'success'
+        )
+    }
     return (
         <div className='container'>
             <div className="person-info">
@@ -48,8 +56,10 @@ const Cart = () => {
                     <p>0 Minutes</p>
                 </div>
             </div>
-            <button className='btn-activity'>
-                <p className='btn-activity-text'>Activity Completed</p>
+            <button onClick={activityCompleteBtn} className='btn-activity'>
+                <p className='btn-activity-text'>
+                    Activity Completed
+                </p>
             </button>
         </div>
     );
