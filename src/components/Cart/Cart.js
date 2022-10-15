@@ -31,21 +31,21 @@ const Cart = () => {
             <div className='break-container'>
                 <h4>Add A Break</h4>
                 <div className='break'>
-                    <p><button className='btn-break'>10s</button></p>
-                    <p><button className='btn-break'>20s</button></p>
-                    <p><button className='btn-break'>30s</button></p>
-                    <p><button className='btn-break'>40s</button></p>
+                    <p><button className='btn-break'>10m</button></p>
+                    <p><button className='btn-break'>20m</button></p>
+                    <p><button className='btn-break'>30m</button></p>
+                    <p><button className='btn-break'>40m</button></p>
                 </div>
             </div>
             <div className='exercise-container'>
                 <h4>Exercise Details</h4>
                 <div className='exercise-time'>
                     <h5>Exercise Time</h5>
-                    <p>0 Seconds</p>
+                    <p>0 Minutes</p>
                 </div>
                 <div className='break-time'>
                     <h5>Break Time</h5>
-                    <p>0 Seconds</p>
+                    <p>0 Minutes</p>
                 </div>
             </div>
             <button className='btn-activity'>
