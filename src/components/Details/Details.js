@@ -2,6 +2,7 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
+import Cart from '../Cart/Cart';
 import './Details.css';
 
 
@@ -19,7 +20,7 @@ const Details = () => {
             <div className='activities-container'>
                 <div className='header'>
                     <FontAwesomeIcon className='icon' icon={faDumbbell}></FontAwesomeIcon>
-                    <h2>Boost-Your-Daily-Activity</h2>
+                    <h2>BOOST-YOUR-DAILY-ACTIVITY</h2>
                 </div>
                 <h2>Select today's exercise</h2>
                 <div className='activities-card-container'>
@@ -31,8 +32,8 @@ const Details = () => {
                     }
                 </div>
             </div>
-            <div>
-                <h2>Cart Component</h2>
+            <div className='cart-container'>
+                <Cart></Cart>
             </div>
         </div>
     );

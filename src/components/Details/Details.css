@@ -4,7 +4,7 @@
 }
 
 .activities-container {
-    padding: 20px;
+    margin: 50px;
 }
 
 .header {
@@ -22,4 +22,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
+}
+
+.cart-container {
+    padding: 20px 15px;
+    box-shadow: 10px 10px 20px gray;
 }

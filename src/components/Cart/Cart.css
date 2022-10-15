@@ -1,0 +1,81 @@
+.person-info {
+    display: flex;
+    align-items: center;
+}
+
+.cart-image {
+    width: 80px;
+}
+
+.person-name {
+    margin-left: 10px;
+}
+
+.person-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 20px;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.details-numbers {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.details-info {
+    font-size: 18px;
+}
+
+.break-container,
+.exercise-container {
+    margin-top: 50px;
+}
+
+.break {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-break {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.exercise-time,
+.break-time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn-activity {
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #6d9bc3;
+}
+
+.btn-activity:hover {
+    color: white;
+    background-color: #0783b8;
+    cursor: pointer;
+}
+
+.btn-activity-text {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}

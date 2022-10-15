@@ -45,10 +45,12 @@
 }
 
 .btn-cart .btn-text {
-    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .btn-cart:hover {
     color: white;
     background-color: #0783b8;
+    cursor: pointer;
 }
