@@ -5,7 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2'
 
-const Cart = () => {
+const Cart = ({ cart }) => {
+
+    let total = 0;
+    for (const activity of cart) {
+        total = total + activity.time;
+    }
+
     const activityCompleteBtn = () => {
         Swal.fire(
             'Congratulations!',
@@ -13,8 +19,9 @@ const Cart = () => {
             'success'
         )
     }
+
     return (
-        <div className='container'>
+        <div className='cart'>
             <div className="person-info">
                 <img className='cart-image' src={logo} alt="" />
                 <div className='person-name'>
@@ -24,16 +31,16 @@ const Cart = () => {
             </div>
             <div className='person-details'>
                 <p>
-                    <span className='details-numbers'>75</span>kg
-                    <p className='details-info'>Weight</p>
+                    <span className='details-numbers'>75</span>kg <br />
+                    <span className='details-info'>Weight</span>
                 </p>
                 <p>
-                    <span className='details-numbers'>6.5</span>
-                    <p className='details-info'>Height</p>
+                    <span className='details-numbers'>6.5</span> <br />
+                    <span className='details-info'>Height</span>
                 </p>
                 <p>
-                    <span className='details-numbers'>25</span>yrs
-                    <p className='details-info'>Age</p>
+                    <span className='details-numbers'>25</span>yrs <br />
+                    <span className='details-info'>Age</span>
                 </p>
             </div>
             <div className='break-container'>
@@ -46,10 +53,11 @@ const Cart = () => {
                 </div>
             </div>
             <div className='exercise-container'>
+                {/* <p>Selected Item: {cart.length}</p> */}
                 <h4>Exercise Details</h4>
                 <div className='exercise-time'>
                     <h5>Exercise Time</h5>
-                    <p>0 Minutes</p>
+                    <p>{total} Minutes</p>
                 </div>
                 <div className='break-time'>
                     <h5>Break Time</h5>
@@ -61,7 +69,7 @@ const Cart = () => {
                     Activity Completed
                 </p>
             </button>
-        </div>
+        </div >
     );
 };
 

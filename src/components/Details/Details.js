@@ -10,12 +10,21 @@ import './Details.css';
 
 const Details = () => {
     const [activities, setActivities] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('activities.json')
             .then(res => res.json())
             .then(data => setActivities(data))
-    }, [])
+    }, []);
+
+    const handleAddToCart = (activity) => {
+        // console.log(activity);
+        const newCart = [...cart, activity];
+        setCart(newCart);
+    }
+
+
     return (
         <div>
             <div className='details-container'>
@@ -30,12 +39,14 @@ const Details = () => {
                             activities.map(activity => <Activity
                                 key={activity.id}
                                 activity={activity}
+                                handleAddToCart={handleAddToCart}
                             ></Activity>)
                         }
                     </div>
                 </div>
                 <div className='cart-container'>
-                    <Cart></Cart>
+
+                    <Cart cart={cart}></Cart>
                 </div>
             </div>
             <div>

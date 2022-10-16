@@ -1,9 +1,9 @@
 import React from 'react';
 import './Activity.css';
 
-const Activity = ({ activity }) => {
-    // console.log(activity);
+const Activity = ({ activity, handleAddToCart }) => {
     const { name, age, description, img, time } = activity;
+
     return (
         <div className='activity'>
             <img src={img} alt="" />
@@ -13,7 +13,7 @@ const Activity = ({ activity }) => {
                 <p>For Age: <strong>{age}</strong></p>
                 <p>Time Required: <strong>{time}</strong> Minutes</p>
             </div>
-            <button className='btn-cart'>
+            <button onClick={() => handleAddToCart(activity)} className='btn-cart'>
                 <p className='btn-text'>Add to List</p>
             </button>
         </div>
