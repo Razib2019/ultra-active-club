@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Lunges",
         "description": "Challenging your balance is an essential part of a well-rounded exercise routine. Lunges do just that, promoting functional movement while also increasing strength in your legs and glutes.",
         "age": "20-24",
@@ -9,7 +9,7 @@
         "quantity": 0
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "Pushups",
         "description": "Drop and give me 20! Pushups are one of the most basic yet effective bodyweight moves you can perform because of the number of muscles that are recruited to perform them.",
         "age": "18-24",
@@ -18,7 +18,7 @@
         "quantity": 0
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "Squats",
         "description": "Squats increase lower body and core strength, as well as flexibility in your lower back and hips. Because they engage some of the largest muscles in the body, they also pack a major punch in terms of calories burned.",
         "age": "19-23",
@@ -27,7 +27,7 @@
         "quantity": 0
     },
     {
-        "id": "4",
+        "id": 4,
         "name": "Standing overhead dumbbell presses",
         "description": "Compound exercises, which utilize multiple joints and muscles, are perfect for busy bees as they work several parts of your body at once. A standing overhead press isn't only one of the best exercises you can do for your shoulders, but it also engages your upper back and core.",
         "age": "23-26",
@@ -36,7 +36,7 @@
         "quantity": 0
     },
     {
-        "id": "5",
+        "id": 5,
         "name": "Dumbbell rows",
         "description": "Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your upper body. Choose a moderate-weight dumbbell and ensure that you’re squeezing at the top of the movement.",
         "age": "22-28",
@@ -45,7 +45,7 @@
         "quantity": 0
     },
     {
-        "id": "6",
+        "id": 6,
         "name": "Single-leg dead-lifts",
         "description": "This is another exercise that challenges your balance. Single-leg deadlifts require stability and leg strength. Grab a light to moderate dumbbell to complete this move.",
         "age": "24-28",
@@ -54,7 +54,7 @@
         "quantity": 0
     },
     {
-        "id": "7",
+        "id": 7,
         "name": "Burpees",
         "description": "An exercise we love to hate, burpees are a super-effective, whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength.",
         "age": "22-24",
@@ -63,7 +63,7 @@
         "quantity": 0
     },
     {
-        "id": "8",
+        "id": 8,
         "name": "Side planks",
         "description": "A healthy body requires a strong core at its foundation, so don’t neglect core-specific moves like the side plank.",
         "age": "16-20",
@@ -72,7 +72,7 @@
         "quantity": 0
     },
     {
-        "id": "9",
+        "id": 9,
         "name": "Planks",
         "description": "Planks are an effective way to target both your abdominal muscles and your whole body. Planking stabilizes your core without straining your back the way situps or crunches might.",
         "age": "19-25",

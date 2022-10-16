@@ -45,7 +45,6 @@ const Details = () => {
                     </div>
                 </div>
                 <div className='cart-container'>
-
                     <Cart cart={cart}></Cart>
                 </div>
             </div>

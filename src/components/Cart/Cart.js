@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css';
 import logo from '../../../src/images/image-1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import Break from '../Break/Break';
 
 const Cart = ({ cart }) => {
+
+    const [breaks, setBreaks] = useState([]);
+    const [time, setTime] = useState([]);
+
+    useEffect(() => {
+        fetch('breaks.json')
+            .then(res => res.json())
+            .then(data => setBreaks(data))
+    }, []);
 
     let total = 0;
     for (const activity of cart) {
         total = total + activity.time;
     }
 
+    const addToCart = (breakTime) => {
+        setTime(breakTime)
+    }
+
+    // Toast
     const activityCompleteBtn = () => {
         Swal.fire(
             'Congratulations!',
@@ -43,17 +58,19 @@ const Cart = ({ cart }) => {
                     <span className='details-info'>Age</span>
                 </p>
             </div>
-            <div className='break-container'>
+            <div>
                 <h4>Add A Break</h4>
-                <div className='break'>
-                    <p><button className='btn-break'>10m</button></p>
-                    <p><button className='btn-break'>20m</button></p>
-                    <p><button className='btn-break'>30m</button></p>
-                    <p><button className='btn-break'>40m</button></p>
+                <div className='break-container'>
+                    {
+                        breaks.map(breakTime => <Break
+                            key={breakTime.id}
+                            breakTime={breakTime}
+                            addToCart={addToCart}
+                        ></Break>)
+                    }
                 </div>
             </div>
             <div className='exercise-container'>
-                {/* <p>Selected Item: {cart.length}</p> */}
                 <h4>Exercise Details</h4>
                 <div className='exercise-time'>
                     <h5>Exercise Time</h5>
@@ -61,7 +78,7 @@ const Cart = ({ cart }) => {
                 </div>
                 <div className='break-time'>
                     <h5>Break Time</h5>
-                    <p>0 Minutes</p>
+                    <p>{time} Minutes</p>
                 </div>
             </div>
             <button onClick={activityCompleteBtn} className='btn-activity'>
