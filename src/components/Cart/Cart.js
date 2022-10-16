@@ -22,8 +22,14 @@ const Cart = ({ cart }) => {
         total = total + activity.time;
     }
 
+    useEffect(() => {
+        const storedData = localStorage.getItem('break-time');
+        setTime(storedData);
+    }, []);
+
     const addToCart = (breakTime) => {
-        setTime(breakTime)
+        localStorage.setItem('break-time', breakTime);
+        setTime(breakTime);
     }
 
     // Toast

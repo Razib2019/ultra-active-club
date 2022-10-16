@@ -2,7 +2,7 @@ import React from 'react';
 import './Break.css';
 
 const Break = ({ addToCart, breakTime }) => {
-    const { name, time, id } = breakTime;
+    const { name, time } = breakTime;
 
     return (
         <div>
